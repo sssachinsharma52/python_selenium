@@ -13,7 +13,7 @@ Run selenium test case in python with disposable containers
 
 ## Pre-Requisite 
 
-###install docker
+### install docker
 
 sudo apt-get update
 sudo apt-get remove docker docker-engine docker.io
