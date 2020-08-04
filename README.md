@@ -47,7 +47,7 @@ Run selenium test case in python with disposable containers
 
 ### Install python dependencies
 - pip install parallel-execute
-- pip install seleniump
+- pip install selenium
 - pip install requests
 - pip install Pillow
 - pip install py-execute
