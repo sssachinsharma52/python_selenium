@@ -77,7 +77,7 @@ and when asked for **URL**, paas values like  https://www.facebook.com/ in prope
 I have done it in two different ways which are explained below: 
 
 
-### Method 1
+#### Method 1
 
 Creation of disposable containers which will create docker containers of selenium/standalone-chrome and selenium/standalone-firefox images and check the test case parallely.
 
@@ -99,7 +99,7 @@ Creation of disposable containers which will create docker containers of seleniu
 
 
 
-### Method 2
+#### Method 2
 
 Creation of disposable containers which will first create a selenium grid which consists of hub and nodes. Each of the hub, chrome-node and firefox-node are separate docker containers of selenium/hub, selenium/node-chrome and selenium/node-firefox images.
 
