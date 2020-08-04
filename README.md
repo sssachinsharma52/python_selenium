@@ -15,57 +15,58 @@ Run selenium test case in python with disposable containers
 
 ### install docker
 
-sudo apt-get update
-sudo apt-get remove docker docker-engine docker.io
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
-docker --version
-sudo groupadd docker
-sudo usermod -aG docker $USER
+- sudo apt-get update
+- sudo apt-get remove docker docker-engine docker.io
+- sudo apt install docker.io
+- sudo systemctl start docker
+- sudo systemctl enable docker
+- docker --version
+- sudo groupadd docker
+- sudo usermod -aG docker $USER
 
 **It's good to pull these images initially**
 
-docker pull selenium/hub
-docker pull selenium/node-chrome
-docker pull selenium/node-firefox
-docker pull selenium/standalone-chrome
-docker pull selenium/standalone-firefox
+- docker pull selenium/hub
+- docker pull selenium/node-chrome
+- docker pull selenium/node-firefox
+- docker pull selenium/standalone-chrome
+- docker pull selenium/standalone-firefox
 
 
 
 ###install python and pip 
 
-sudo apt install python3.7
-alias python=python3
-python --version 
+- sudo apt install python3.7
+- alias python=python3
+- python --version 
 
-sudo apt install python3-pip
-sudo apt install python-pip
-alias pip=pip3
+- sudo apt install python3-pip
+- sudo apt install python-pip
+- alias pip=pip3
 
 
 ### install python depemdenties
-pip install parallel-execute
-pip install seleniump
-pip install requests
-pip install Pillow
-pip install py-execute
+- pip install parallel-execute
+- pip install seleniump
+- pip install requests
+- pip install Pillow
+- pip install py-execute
 
 
 ###install awscli
-sudo apt install awscli
+- sudo apt install awscli
 
 **configure awscli**
 
-aws configure
-AWS Access Key ID [None]: ########################
-AWS Secret Access Key [None]: ########################
-Default region name [None]: ap-northeast-1
-Default output format [None]: text
+- aws configure
+
+- AWS Access Key ID [None]: ########################
+- AWS Secret Access Key [None]: ########################
+- Default region name [None]: ap-northeast-1
+- Default output format [None]: text
 
 ### Run
-python3 lambdatest_assignment1.py
+- python3 lambdatest_assignment1.py
 
 and when asked for **URL**, paas values like ** https://www.facebook.com/**
 
