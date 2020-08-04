@@ -31,11 +31,11 @@ alias pip=pip3
 alias python=python3
 
 echo "Installing python dependencies . . ."
-pip install parallel-execute
-pip install selenium
-pip install requests
-pip install Pillow
-pip install py-execute
+pip3 install parallel-execute
+pip3 install selenium
+pip3 install requests
+pip3 install Pillow
+pip3 install py-execute
 
 echo "Installing awscli . . ."
 #install awscli
