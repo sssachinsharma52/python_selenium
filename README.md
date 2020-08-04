@@ -60,10 +60,10 @@ Run selenium test case in python with disposable containers
 
 - aws configure
 
-AWS Access Key ID [None]: ########################
-AWS Secret Access Key [None]: ########################
-Default region name [None]: ap-northeast-1
-Default output format [None]: text
+AWS Access Key ID [None]: ########################\
+AWS Secret Access Key [None]: ########################\
+Default region name [None]: ap-northeast-1\
+Default output format [None]: text\
 
 ### Run
 - python3 lambdatest_assignment1.py
