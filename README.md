@@ -65,8 +65,9 @@ AWS Secret Access Key [None]: ########################\
 Default region name [None]: ap-northeast-1\
 Default output format [None]: text\
 
-### Run
+### How to Run script ?
 - python3 lambdatest_assignment1.py
+- python3 lambdatest_assignment2.py
 
 and when asked for **URL**, paas values like ** https://www.facebook.com/**
 
