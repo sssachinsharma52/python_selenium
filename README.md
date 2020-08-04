@@ -1,2 +1,74 @@
 # python_selenium
 Run selenium test case in python with disposable containers
+
+
+## Problem statement
+- We need a system where we provide a website link and want to capture the screenshot on chrome & Firefox in Ubuntu.
+
+- Create a script which asks for a website link and spawns 2 containers parallely and opens that link in chrome  and Firefox, capture the screenshot, push them to s3 and provide 2 signed s3 links.
+
+- Links should expire after 30 mins.
+
+
+
+## Pre-Requisite 
+
+
+
+
+
+## Solution:
+I have done it in two different ways which are explained below: 
+
+
+### Method 1
+
+Creation of disposable containers which will create docker containers of selenium/standalone-chrome and selenium/standalone-firefox images and check the test case parallely.
+
+
+### Steps of execution:
+
+Insert proper url.
+Create parallel standalone containers of selenium/standalone-chrome and selenium/standalone-firefox images.
+Take screenshot of the web page after loading
+Delete the container and hence these are disposable containers
+Upload the image to s3
+Provide the presigned URL to download the image which will expire after 30 mins.
+
+
+
+**NOTE:** These two test cases are executed parallely. There are different ways of doing them like pytest, process loom etc. I have done this using process loom. 
+
+
+
+
+
+### Method 2
+
+Creation of disposable containers which will first create a selenium grid which consists of hub and nodes. Each of the hub, chrome-node and firefox-node are separate docker containers of selenium/hub, selenium/node-chrome and selenium/node-firefox images.
+
+
+### Steps of execution:
+
+Insert proper url.
+Create a selenium grid of hub and nodes using docker with each component as a separate container.
+Take a screenshot of the web page after loading on both the browsers parallely.
+Upload the images to s3 and give a presigned url to download the images which will expire after 30 mins.
+Delete the selenium grid after completion of test cases.
+
+**NOTE:** 
+
+These two test cases are executed parallely after creation of the selenium grid. There are different ways of creating this grid, I have used docker in python so as to keep everything in one python script. We can also create the same using docker compose. 
+
+Here also I have used processloom for parallel execution. 
+
+
+
+**Refer:**
+
+Which docker image ?
+
+standalone-firefox – Image to create standalone grid
+standalone-firefox-debug – Image to create standalone grid with debugging capability
+node-firefox – Image to create selenium node that can be registered to hub
+
