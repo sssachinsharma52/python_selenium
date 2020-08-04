@@ -13,7 +13,7 @@ Run selenium test case in python with disposable containers
 
 ## Pre-Requisite 
 
-### install docker
+### Install docker
 
 - sudo apt-get update
 - sudo apt-get remove docker docker-engine docker.io
@@ -34,7 +34,7 @@ Run selenium test case in python with disposable containers
 
 
 
-### install python and pip 
+### Install python and pip 
 
 - sudo apt install python3.7
 - alias python=python3
@@ -45,7 +45,7 @@ Run selenium test case in python with disposable containers
 - alias pip=pip3
 
 
-### install python dependencies
+###Install python dependencies
 - pip install parallel-execute
 - pip install seleniump
 - pip install requests
@@ -53,7 +53,7 @@ Run selenium test case in python with disposable containers
 - pip install py-execute
 
 
-### install awscli
+### Install awscli
 - sudo apt install awscli
 
 ## Configure awscli 
