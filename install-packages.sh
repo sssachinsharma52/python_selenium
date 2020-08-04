@@ -25,7 +25,7 @@ sudo apt install python3.7
 alias python=python3
 python --version 
 
-sudo apt install python3-pi
+sudo apt install python3-pip
 sudo apt install python-pip
 alias pip=pip3
 alias python=python3
