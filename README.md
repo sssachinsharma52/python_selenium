@@ -34,7 +34,7 @@ Run selenium test case in python with disposable containers
 
 
 
-###install python and pip 
+### install python and pip 
 
 - sudo apt install python3.7
 - alias python=python3
@@ -53,7 +53,7 @@ Run selenium test case in python with disposable containers
 - pip install py-execute
 
 
-###install awscli
+### install awscli
 - sudo apt install awscli
 
 **configure awscli**
