@@ -73,6 +73,11 @@ Default output format [None]: text
 and when asked for **URL**, paas values like  https://www.facebook.com/ in proper format as mentioned.
 
 
+## Alternative
+
+### NOTE: You can also install the above pre-requisties using the install_packages.sh script.
+Run chmod +x install_packages.sh && ./install_packages.sh 
+
 ## Solution:
 I have done it in two different ways which are explained below: 
 
