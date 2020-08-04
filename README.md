@@ -56,7 +56,7 @@ Run selenium test case in python with disposable containers
 ### install awscli
 - sudo apt install awscli
 
-**configure awscli**
+## Configure awscli 
 
 - aws configure
 
@@ -64,6 +64,7 @@ AWS Access Key ID [None]: ########################\
 AWS Secret Access Key [None]: ########################\
 Default region name [None]: ap-northeast-1\
 Default output format [None]: text
+
 
 ### How to Run script ?
 - python3 lambdatest_assignment1.py
@@ -113,11 +114,11 @@ Creation of disposable containers which will first create a selenium grid which 
 
 **NOTE:** 
 
-These two test cases are executed parallely after creation of the selenium grid. There are different ways of creating this grid, I have used docker in python so as to keep everything in one python script. We can also create the same using docker compose. 
+- These two test cases are executed parallely after creation of the selenium grid. There are different ways of creating this grid, I have used docker in python so as to keep everything in one python script. We can also create the same using docker compose. 
 
-Here also I have used processloom for parallel execution. 
+- Here also I have used processloom for parallel execution. 
 
-
+- **I have already created s3 bucket and have passed the bucket name in script. You can add your bucket name in the script.** 
 
 **Refer:**
 
