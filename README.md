@@ -63,13 +63,13 @@ Run selenium test case in python with disposable containers
 AWS Access Key ID [None]: ########################\
 AWS Secret Access Key [None]: ########################\
 Default region name [None]: ap-northeast-1\
-Default output format [None]: text\
+Default output format [None]: text
 
 ### How to Run script ?
 - python3 lambdatest_assignment1.py
 - python3 lambdatest_assignment2.py
 
-and when asked for **URL**, paas values like ** https://www.facebook.com/**
+and when asked for **URL**, paas values like  https://www.facebook.com/ in proper format as mentioned.
 
 
 ## Solution:
