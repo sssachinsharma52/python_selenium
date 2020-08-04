@@ -24,7 +24,9 @@ Run selenium test case in python with disposable containers
 - sudo groupadd docker
 - sudo usermod -aG docker $USER
 
-**It's good to pull these images initially**
+**After this step, logout from the machine and login again and proceed with next steps**
+
+**It's good to pull these images initially, else these will be pulled while running script**
 
 - docker pull selenium/hub
 - docker pull selenium/node-chrome
