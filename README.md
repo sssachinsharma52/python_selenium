@@ -58,6 +58,12 @@ Run selenium test case in python with disposable containers
 ### Install awscli
 - sudo apt install awscli
 
+
+## Alternative
+
+### NOTE: You can also install the above pre-requisties using the install_packages.sh script.
+Run chmod +x install_packages.sh && ./install_packages.sh 
+
 ## Configure awscli 
 
 - aws configure
@@ -74,11 +80,7 @@ Default output format [None]: text
 
 and when asked for **URL**, paas values like  https://www.facebook.com/ in proper format as mentioned.
 
-
-## Alternative
-
-### NOTE: You can also install the above pre-requisties using the install_packages.sh script.
-Run chmod +x install_packages.sh && ./install_packages.sh 
+**After successful execution of this script, you will get s3 presigned url to download the image which will expire after 30 mins.**
 
 ## Solution:
 I have done it in two different ways which are explained below: 
