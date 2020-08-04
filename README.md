@@ -45,7 +45,7 @@ Run selenium test case in python with disposable containers
 - alias pip=pip3
 
 
-### install python depemdenties
+### install python dependencies
 - pip install parallel-execute
 - pip install seleniump
 - pip install requests
