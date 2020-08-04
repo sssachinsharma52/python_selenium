@@ -82,12 +82,12 @@ Creation of disposable containers which will create docker containers of seleniu
 
 ### Steps of execution:
 
-Insert proper url.\
-Create parallel standalone containers of selenium/standalone-chrome and selenium/standalone-firefox images.\
-Take screenshot of the web page after loading\
-Delete the container and hence these are disposable containers\
-Upload the image to s3\
-Provide the presigned URL to download the image which will expire after 30 mins.\
+- Insert proper url.\
+- Create parallel standalone containers of selenium/standalone-chrome and selenium/standalone-firefox images.\
+- Take screenshot of the web page after loading\
+- Delete the container and hence these are disposable containers\
+- Upload the image to s3\
+- Provide the presigned URL to download the image which will expire after 30 mins.\
 
 
 
@@ -104,11 +104,11 @@ Creation of disposable containers which will first create a selenium grid which 
 
 ### Steps of execution:
 
-Insert proper url.\
-Create a selenium grid of hub and nodes using docker with each component as a separate container.\
-Take a screenshot of the web page after loading on both the browsers parallely.\
-Upload the images to s3 and give a presigned url to download the images which will expire after 30 mins.\
-Delete the selenium grid after completion of test cases.\
+- Insert proper url.\
+- Create a selenium grid of hub and nodes using docker with each component as a separate container.\
+- Take a screenshot of the web page after loading on both the browsers parallely.\
+- Upload the images to s3 and give a presigned url to download the images which will expire after 30 mins.\
+- Delete the selenium grid after completion of test cases.\
 
 **NOTE:** 
 
@@ -122,7 +122,7 @@ Here also I have used processloom for parallel execution.
 
 Which docker image ?
 
-standalone-firefox – Image to create standalone grid\
-standalone-firefox-debug – Image to create standalone grid with debugging capability\
-node-firefox – Image to create selenium node that can be registered to hub\
+- standalone-firefox – Image to create standalone grid\
+- standalone-firefox-debug – Image to create standalone grid with debugging capability\
+- node-firefox – Image to create selenium node that can be registered to hub\
 
