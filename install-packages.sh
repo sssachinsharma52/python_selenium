@@ -37,6 +37,12 @@ pip3 install requests
 pip3 install Pillow
 pip3 install py-execute
 
+pip install parallel-execute
+pip install selenium
+pip install requests
+pip install Pillow
+pip install py-execute
+
 echo "Installing awscli . . ."
 #install awscli
 sudo apt install awscli
