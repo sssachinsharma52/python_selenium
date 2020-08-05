@@ -91,7 +91,7 @@ I have done it in two different ways which are explained below:
 Creation of disposable containers which will create docker containers of selenium/standalone-chrome and selenium/standalone-firefox images and check the test case parallely.
 
 
-### Steps of execution:
+### Steps/Flow of execution:
 
 - Insert proper url.
 - Create parallel standalone containers of selenium/standalone-chrome and selenium/standalone-firefox images.
@@ -113,7 +113,7 @@ Creation of disposable containers which will create docker containers of seleniu
 Creation of disposable containers which will first create a selenium grid which consists of hub and nodes. Each of the hub, chrome-node and firefox-node are separate docker containers of selenium/hub, selenium/node-chrome and selenium/node-firefox images.
 
 
-### Steps of execution:
+### Steps/Flow of execution:
 
 - Insert proper url.
 - Create a selenium grid of hub and nodes using docker with each component as a separate container.
@@ -136,4 +136,13 @@ Which docker image ?
 - standalone-firefox – Image to create standalone grid
 - standalone-firefox-debug – Image to create standalone grid with debugging capability
 - node-firefox – Image to create selenium node that can be registered to hub
+
+
+## Result screenshots
+
+![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2015-36-05.png)
+
+![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2016-09-36.png)
+
+![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2015-34-20.png)
 
