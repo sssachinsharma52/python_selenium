@@ -85,7 +85,7 @@ and when asked for **URL**, paas values like  https://www.facebook.com/ in prope
 
 - Install all packages (Run chmod +x install_packages.sh && ./install_packages.sh)
 - Configure AWS (aws configure)
-- Create bucket or use already created bucket in your account and change the name in both the scripts by replacing **s3://test-suite-test/** with your bucket url.
+- Create bucket or use already created bucket in your account and change the name in both the scripts by replacing **s3://test-suite-test/** with your bucket url. **(Line 14 or 15 of both the python scripts)**
 - Run python script 
   - python3 lambdatest_assignment1.py and pass the url when asked (https://www.googe.com or any other valid url)
   - python3 lambdatest_assignment2.py and pass the url when asked (https://www.google.com or any other valid url)
