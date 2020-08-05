@@ -80,6 +80,18 @@ Default output format [None]: text
 
 and when asked for **URL**, paas values like  https://www.facebook.com/ in proper format as mentioned.
 
+
+### Steps to Run
+
+- Install all packages (Run chmod +x install_packages.sh && ./install_packages.sh)
+- Configure AWS (aws configure)
+- Create bucket or use already created bucket in your account and change the name in both the scripts by replacing **s3://test-suite-test/** with your bucket url.
+- Run python script 
+  - python3 lambdatest_assignment1.py and pass the url when asked (https://www.googe.com or any other valid url)
+  - python3 lambdatest_assignment2.py and pass the url when asked (https://www.google.com or any other valid url)
+
+
+
 **After successful execution of this script, you will get s3 presigned url to download the image which will expire after 30 mins.**
 
 ## Solution:
@@ -98,8 +110,8 @@ Creation of disposable containers which will create docker containers of seleniu
 - Take screenshot of the web page after loading
 - Delete the container and hence these are disposable containers
 - Upload the image to s3
-- Provide the presigned URL to download the image which will expire after 30 mins.
-
+- Provide the presigned URL to download the image which will expire after 30 mins.  
+  
 
 
 **NOTE:** These two test cases are executed parallely. There are different ways of doing them like pytest, process loom etc. I have done this using process loom. 
@@ -140,9 +152,14 @@ Which docker image ?
 
 ## Result screenshots
 
+**Method 1 - lambdatest_assignment1.py**
+![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2015-34-20.png)
+
+**Method 2 - lambdatest_assignmen2.py**
 ![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2015-36-05.png)
 
+**Screenshot of disposable containers created and deleted in between execution of these two methods **
 ![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2016-09-36.png)
 
-![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2015-34-20.png)
+
 
