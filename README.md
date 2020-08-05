@@ -3,7 +3,7 @@ Run selenium test case in python with disposable containers
 
 
 ## Problem statement
-- We need a system where we provide a website link and want to capture the screenshot on chrome & Firefox in Ubuntu.
+- We need a system where we provide a website link and want to capture the screenshot on chrome & Firefox in **Ubuntu**.
 
 - Create a script which asks for a website link and spawns 2 containers parallely and opens that link in chrome  and Firefox, capture the screenshot, push them to s3 and provide 2 signed s3 links.
 
