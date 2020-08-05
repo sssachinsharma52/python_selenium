@@ -158,7 +158,7 @@ Which docker image ?
 **Method 2 - lambdatest_assignmen2.py**
 ![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2015-36-05.png)
 
-**Screenshot of disposable containers created and deleted in between execution of these two methods **
+**Screenshot of disposable containers created and deleted in between execution of these two methods**
 ![alt text](https://github.com/sssachinsharma52/python_selenium/blob/master/Screenshot%20at%20Aug%2004%2016-09-36.png)
 
 
