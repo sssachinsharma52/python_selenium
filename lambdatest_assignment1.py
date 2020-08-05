@@ -12,7 +12,7 @@ import os
 from selenium import webdriver
 from PIL import Image
 
-
+bucket="s3://test-suite-test/"
 url=input("Enter a valid url :")
 #url="https://www.facebook.com/"
 
@@ -58,14 +58,14 @@ def test_chrome_browser(url):
 
     #uploading the image to s3 bucket
     print ("uploading screenshot to s3 bucket . . .")
-    resp2 = "aws s3 cp image_chrome.png  s3://test-suite-test/ --profile default"
+    resp2 = f"aws s3 cp image_chrome.png  {bucket} --profile default"
     resp_data2 = os.popen(resp2)
     output2 = resp_data2.read()
     print(output2)
 
     #presigned url to download the image
     print ("Presigned URL to download the image is given below, link will expire in 30 mins")
-    resp3 = "aws s3 presign s3://test-suite-test/image_chrome.png --expires-in 1800 --profile default"
+    resp3 = f"aws s3 presign {bucket}image_chrome.png --expires-in 1800 --profile default"
     resp_data3 = os.popen(resp3)
     output3 = resp_data3.read()
     print(output3)
@@ -98,13 +98,13 @@ def test_firefox_browser(url):
     print("container_id:" + output1)
 
     print ("uploading screenshot to s3 bucket . . .")
-    resp2 = "aws s3 cp image_firefox.png  s3://test-suite-test/ --profile default"
+    resp2 = f"aws s3 cp image_firefox.png  {bucket} --profile default"
     resp_data2 = os.popen(resp2)
     output2 = resp_data2.read()
     print(output2)
 
     print ("Presigned URL to download the image is given below, link will expire in 30 mins")
-    resp3 = "aws s3 presign s3://test-suite-test/image_firefox.png --expires-in 1800 --profile default"
+    resp3 = f"aws s3 presign {bucket}image_firefox.png --expires-in 1800 --profile default"
     resp_data3 = os.popen(resp3)
     output3 = resp_data3.read()
     print(output3)
